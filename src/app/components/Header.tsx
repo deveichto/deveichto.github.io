@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { assets } from "../assets/assets";
 import Link from "next/link";
-import NavLinks from "./_partials/NavLinks";
 
 const HeaderComp = () => {
     return (
@@ -16,11 +15,11 @@ const HeaderComp = () => {
                 </Link>
 
                 <ul className={`hidden md:flex items-center gp-8 lg:gap-8 rounded-full px-12 py-3`}>
-                    <NavLinks url="#top" className="">Home</NavLinks>
-                    <NavLinks url="#projects" className="">Projects</NavLinks>
-                    <NavLinks url="#services" className="">My Services</NavLinks>
-                    <NavLinks url="#about" className="">About</NavLinks>
-                    <NavLinks url="#contacts" className="">Contacts</NavLinks>
+                    <li><Link href="#top" className='font-Ovo'>Home</Link></li>
+                    <li><Link href="#projects" className='font-Ovo'>Projets</Link></li>
+                    <li><Link href="#services" className='font-Ovo'>Services</Link></li>
+                    <li><Link href="#about" className='font-Ovo'>About</Link></li>
+                    <li><Link href="#contacts" className='font-Ovo'>Contacts</Link></li>
                 </ul>
 
                 <div className="flex items-center gap-4">
