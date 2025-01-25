@@ -10,7 +10,7 @@ import ProjectsComp from "./components/Projects";
 import ServicesComp from "./components/Services";
 
 export default function Home() {
-    const [isDarkMode, setIsDarkMode] = useState(true);
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
     useEffect( () => {
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

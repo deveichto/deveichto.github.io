@@ -2,22 +2,27 @@
 import Image from "next/image"
 import { assets } from "../assets/assets";
 import Link from "next/link";
-import { RefObject, useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
 const HeaderComp = ({
     isDarkMode, 
     setIsDarkMode
 }: {
-    isDarkMode: boolean
+    isDarkMode: boolean,
+    setIsDarkMode: Dispatch<SetStateAction<boolean>>
 }) => {
     // Mobile Menu
-    const sideMenuRef = useRef();
+    const sideMenuRef = useRef<HTMLUListElement>(null);
     
     const openMenu = () => {
-        sideMenuRef.current.style.transform = 'translatex(-16rem)';
+        if (sideMenuRef.current != null) {
+            sideMenuRef.current.style.transform = 'translatex(-16rem)';
+        }
     }
     const closeMenu = () => {
-        sideMenuRef.current.style.transform = 'translatex(16rem)';
+        if (sideMenuRef.current != null) {
+            sideMenuRef.current.style.transform = 'translatex(16rem)';
+        }
     }
 
     // For Scroll
