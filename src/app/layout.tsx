@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Outfit, Ovo } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfits = Outfit({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ovo = Ovo({
   subsets: ["latin"],
+  weight: ["400"]
 });
 
 export const metadata: Metadata = {
@@ -23,10 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="scroll-smooth">
+      <body className={`${outfits.className} ${ovo.className} antialiased overflow-x-hidden`}>
         {children}
       </body>
     </html>
