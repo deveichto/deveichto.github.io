@@ -5,10 +5,10 @@ import { Intro } from "../datas/data"
 const IntroComp = () => {
     return (
         <div className="w-11/12 text-start mx-auto h-screen flex flex-col items-center justify-center">
-            <div className="w-full px-12 py-10 scroll-mt-20 flex flex-col-reverse md:flex-row gap-2 mt-32 md:mt-0">
+            <div className="w-full px-12 py-10 scroll-mt-20 flex flex-col-reverse md:flex-row gap-2">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
-                        <h1 className="pb-16 text-7xl font-thin tracking-tight lg:mt-12">
+                        <h1 className="pb-14 text-5xl md:text-6xl lg:text-7xl font-thin tracking-tight lg:mt-12">
                             {Intro.name}
                         </h1>
                         <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">

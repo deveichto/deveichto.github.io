@@ -4,7 +4,7 @@ import { assets } from "../assets/assets"
 
 const ProjectsComp = () => {
     return (
-        <div id="projects" className="w-full px-[6%] py10 scroll-mt-20">
+        <div id="projects" className="w-full px-[6%] py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg font-Ovo">Portfolio</h4>
             <h2 className="text-center text-5xl font-Ovo">My Projects</h2>
 
