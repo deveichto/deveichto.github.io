@@ -12,7 +12,7 @@ const ProjectsComp = () => {
                 These are my projects that i made. You can click each to view the full details.
             </p>
 
-            <div className="grid grid-cols-auto md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
+            <div className="grid grid-cols-auto md:grid-cols-3 lg:grid-cols-4 my-10 gap-5 dark:text-black">
                 {Projects.map( (p) => (
                     <div key={p.id} className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style={{backgroundImage: `url(${p.thumbnail})`}}>
                         <div className="bg-white w-11/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">

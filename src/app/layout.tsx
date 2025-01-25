@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${outfits.className} ${ovo.className} antialiased overflow-x-hidden`}>
+      <body className={`${outfits.className} ${ovo.className} antialiased overflow-x-hidden dark:bg-darkTheme dark:text-white`}>
         {children}
       </body>
     </html>
