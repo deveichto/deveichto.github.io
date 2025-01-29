@@ -51,7 +51,7 @@ const HeaderComp = ({
                 <ul className={`hidden md:flex items-center gap-8 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'}`}>
                     <li><Link href="#top" className='font-Ovo'>Home</Link></li>
                     <li><Link href="#projects" className='font-Ovo'>Projets</Link></li>
-                    <li><Link href="#services" className='font-Ovo'>Services</Link></li>
+                    <li className="hidden"><Link href="#services" className='font-Ovo'>Services</Link></li>
                     <li><Link href="#about" className='font-Ovo'>About</Link></li>
                     <li><Link href="#contacts" className='font-Ovo'>Contacts</Link></li>
                 </ul>
@@ -59,7 +59,7 @@ const HeaderComp = ({
                 <div className="flex items-center gap-4">
                     <button onClick={() => setIsDarkMode((prev: boolean) => !prev)}><Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt="Theme Mode" className="w-6" /></button>
 
-                    <Link href="#contact" className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">
+                    <Link href="#contacts" className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">
                         Contact
                         <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="Arrow Icon" className="w-3" />
                     </Link>
@@ -77,7 +77,7 @@ const HeaderComp = ({
 
                     <li><Link href="#top" className="" onClick={closeMenu}>Home</Link></li>
                     <li><Link href="#projects" className="" onClick={closeMenu}>Projects</Link></li>
-                    <li><Link href="#services" className="" onClick={closeMenu}>Services</Link></li>
+                    <li className="hidden"><Link href="#services" className="" onClick={closeMenu}>Services</Link></li>
                     <li><Link href="#about" className="" onClick={closeMenu}>About</Link></li>
                     <li><Link href="#contacts" className="" onClick={closeMenu}>Contacts</Link></li>
                 </ul>

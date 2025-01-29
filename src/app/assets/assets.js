@@ -52,9 +52,14 @@ import ajax from './s_ajax.png';
 import typescript from './s_typescript.png';
 import nextjs from './s_nextjs.png';
 import seo from './s_seo.png';
+import xampp from './s_xampp.png';
+import lang_icon from './lang_icon.png';
+import lang_icon_dark from './lang_icon_dark.png';
 
 export const assets = {
-    bootstrap, codeigniter, css, html, javascript, json, mysql, php, webhosting, tailwindcss, react, jquery, ajax, typescript, nextjs, seo,
+    bootstrap, codeigniter, css, html, javascript, json, mysql, php, webhosting, tailwindcss, react, jquery, ajax, typescript, nextjs, seo, xampp,
+    lang_icon,
+    lang_icon_dark,
     user_image,
     code_icon,
     code_icon_dark,

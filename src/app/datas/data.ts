@@ -1,16 +1,10 @@
 import { assets } from "../assets/assets";
 
-export const Experieces = [
-    {
-
-    }
-]
-
 export const Intro = {
     name: "Mark Jeff Abasula",
-    title: "Software Developer",
-    details: "Experienced, dynamic, and detail-oriented Web Developer with a demonstrated history of working in web technology.",
-    description: "Experienced, dynamic, and detail-oriented Web Developer with a demonstrated history of working in web technology. Highly skilled in development using tools like: PHP, Codeigniter, Laravel, Javascript, jQuery, NextJS, Typescript, MySQL and other web technologies. Collaborate with the teams to engineer user-centric and optimized solutions for driving client satisfaction. Strong information technology professional with a Bachelor's degree focused in Computer Science from STI College Fairview.",
+    title: "Software/Web Developer",
+    details: "Experienced, dynamic, and detail-oriented Software/Web Developer with a demonstrated history of working in web technology.",
+    description: "Experienced, dynamic, and detail-oriented Software/Web Developer with a demonstrated history of working in web technology. Highly skilled in development using tools like: PHP, Codeigniter, Laravel, Javascript, jQuery, NextJS, Typescript, MySQL and other web technologies. Collaborate with the teams to engineer user-centric and optimized solutions for driving client satisfaction. Strong information technology professional with a Bachelor's degree focused in Computer Science from STI College Fairview.",
     profile: assets.profile_img
 }
 
@@ -24,11 +18,11 @@ export const Projects = [
             scripting: "Typescript|JSON",
             database: "",
             frontend: "Tailwind CSS|HTML 5|CSS 3",
-            webhost: "Git",
+            webhost: "",
             tools: "VSCode|GIT",
             others: ""
         },
-        details: "Creating my portfolio from scratch using Next.JS (Typescript) by React, Tailwind CSS and by using MongoDB to manage the content.",
+        details: "Developed my own portfolio using Next.JS (Typescript), React & Tailwind CSS.",
         banner: "/portfolio_banner.png",
         link: "https://deveichto.github.io/"
     },
@@ -45,7 +39,7 @@ export const Projects = [
             tools: "VSCode|GIT|SEO",
             others: ""
         },
-        details: "",
+        details: "Contributed on the develoment of client's website and using Codeigniter to create a custom CMS (Content Management System) to manage the content with three (3) different languages.",
         banner: "/ztory_banner.png",
         link: "https://ztoryinc.com/en/home"
     },
@@ -62,7 +56,7 @@ export const Projects = [
             tools: "VSCode|GIT|SEO",
             others: ""
         },
-        details: "",
+        details: "Contributed on the develoment of client's website and using Codeigniter to create a custom CMS (Content Management System) to manage the content with two (2) different languages.",
         banner: "/pmq_banner.png",
         link: "https://renewedcreativity.pmq.org.hk/en/home"
     },
@@ -76,10 +70,10 @@ export const Projects = [
             database: "MySQL",
             frontend: "HTML|CSS|Bootstrap 5",
             webhost: "Timway Webhosting",
-            tools: "VSCode|GIT",
+            tools: "VSCode|GIT|SEO",
             others: ""
         },
-        details: "",
+        details: "Contributed on the develoment of client's website and using Codeigniter to create a custom CMS (Content Management System) to manage the content with three (3) different languages, also integrate the Vinoshipper an API 3rd party for e-commerece checkout and payment.",
         banner: "/lucunda_banner.png",
         link: "https://lucunda.com/"
     },
@@ -96,7 +90,7 @@ export const Projects = [
             tools: "VSCode|GIT|SEO",
             others: ""
         },
-        details: "Revamp the LPS company website.",
+        details: "Contributed on the develoment for revamping the company website, using Codeigniter to build their custom CMS (Content Management System) to manage the company website's content with three (3) different languages.",
         banner: "/lps_banner.png",
         link: "https://www.lpstech.com/site/en/home"
     },
@@ -113,7 +107,7 @@ export const Projects = [
             tools: "VSCode|GIT",
             others: ""
         },
-        details: "",
+        details: "Contributed on the develoment of client's website and using Codeigniter to create a custom CMS (Content Management System) to manage the content.",
         banner: "/bonbon_banner.png",
         link: "https://bonbon.com.hk/"
     },
@@ -130,7 +124,7 @@ export const Projects = [
             tools: "VSCode|GIT",
             others: ""
         },
-        details: "",
+        details: "Contributed on the develoment of client's website and using Codeigniter to create a custom CMS (Content Management System) to manage the content with two (2) different languages.",
         banner: "/kinshing_banner.png",
         link: "http://kinshingengineering.com/en/index"
     }
@@ -146,30 +140,52 @@ export const MyServices = [
 export const AboutMeBox = [
     { 
         id: 1, 
-        icon: assets.code_icon,
-        iconDark: assets.code_icon_dark, 
-        title: 'Programming Languages', 
-        description: 'HTML, CSS, JavaScript React Js, Next Js' 
-    },
-    { 
-        id: 2, 
         icon: assets.edu_icon, 
         iconDark: assets.edu_icon_dark, 
         title: 'Education', 
-        description: 'B.Tech in Computer Science' 
+        description: 'Bachelor of Science in Computer Science' 
+    },
+    { 
+        id: 2, 
+        icon: assets.lang_icon,
+        iconDark: assets.lang_icon_dark, 
+        title: 'Language', 
+        description: 'English & Tagalog'
     },
     { 
         id: 3, 
-        icon: assets.project_icon, 
-        iconDark: assets.project_icon_dark, 
-        title: 'Projects', 
-        description: 'Built more than 5 projects'
+        icon: assets.code_icon,
+        iconDark: assets.code_icon_dark, 
+        title: 'Backend Skills', 
+        description: 'PHP, Codeigniter, Laravel, Next.JS, React, Javascript, Typescript & MySQL' 
+    },
+    { 
+        id: 4, 
+        icon: assets.code_icon,
+        iconDark: assets.code_icon_dark, 
+        title: 'Frontend Skills', 
+        description: 'Tailwind CSS, HTML5, CSS3, Javascript, Ajax, JSON, jQuery & Bootstrap'
     }
 ]
 export const ToolsInAbout = [
-    assets.vscode, 
-    assets.firebase, 
-    assets.mongodb, 
-    assets.figma, 
-    assets.git
+    {
+        name: "VSCode",
+        image: assets.vscode, 
+        
+    },
+    {
+        name: "GIT",
+        image: assets.git, 
+        
+    },
+    {
+        name: "Google SEO",
+        image: assets.seo, 
+        
+    },
+    {
+        name: "XAMPP",
+        image: assets.xampp, 
+        
+    }
 ];

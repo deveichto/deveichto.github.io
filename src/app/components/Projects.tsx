@@ -65,8 +65,8 @@ const ProjectsComp = () => {
             </div>
 
             {openProject && (
-                <div className="fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-50 flex items-center justify-center">
-                    <div className="bg-white text-gray-500 p-2 rounded-md relative w-[90%] md:w-[70%] lg:w-[60%]">
+                <div className="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-70 z-50 flex items-center justify-center">
+                    <div className="bg-white text-gray-500 p-2 rounded-md relative w-[90%] md:w-[70%] lg:w-[60%] h-[600px] md:h-auto overflow-x-hidden overflow-y-auto">
                         <div className="absolute top-4 right-4 cursor-pointer" onClick={() => setOpenProject(false)}>
                             <MdClose width={14} height={14} className="text-black" />
                         </div>
