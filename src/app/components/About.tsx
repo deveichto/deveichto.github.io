@@ -14,7 +14,7 @@ const AboutComp = ({isDarkMode}:{isDarkMode: boolean}) => {
                 </div>
 
                 <div className="flex-1">
-                    <p className="mb-10 max-w-2xl font-Ovo text-justify">{Intro.description}</p>
+                    <p className="mb-10 max-w-4xl font-Ovo text-justify">{Intro.description}</p>
 
                     <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                         {AboutMeBox.map(({icon, iconDark, title, description}, index) => (
