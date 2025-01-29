@@ -46,7 +46,7 @@ const ContactComp = () => {
                     </form>
                 </div>
                 <div className="w-0 border-black dark:border-white border-r h-[400px] hidden lg:block"></div>
-                <div className="w-full mt-10 lg:mt-0 lg:w-1/2 lg:px-10 h-[430px]">
+                <div className="w-full mt-20 md:mt-0 lg:w-1/2 lg:px-10 h-[430px]">
                     <h1 className="text-center mb-10">Contact Me</h1>
 
                     <div className="flex flex-col gap-5 text-gray-500 dark:text-white">
