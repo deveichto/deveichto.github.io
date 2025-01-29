@@ -36,8 +36,25 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import react_logo from './reactlogo.png';
+import bootstrap from './s_bootstrap.png';
+import codeigniter from './s_codeigniter.png';
+import css from './s_css.png';
+import html from './s_html.png';
+import javascript from './s_javascript.png';
+import json from './s_json.png';
+import mysql from './s_mysql.png';
+import php from './s_php.png';
+import webhosting from './s_webhosting.png';
+import tailwindcss from './s_tailwindcss.png';
+import react from './s_react.png';
+import jquery from './s_jquery.png';
+import ajax from './s_ajax.png';
+import typescript from './s_typescript.png';
+import nextjs from './s_nextjs.png';
+import seo from './s_seo.png';
 
 export const assets = {
+    bootstrap, codeigniter, css, html, javascript, json, mysql, php, webhosting, tailwindcss, react, jquery, ajax, typescript, nextjs, seo,
     user_image,
     code_icon,
     code_icon_dark,
@@ -77,43 +94,3 @@ export const assets = {
     right_arrow_bold_dark,
     react_logo
 };
-
-export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
-
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
-
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
-];
-
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
-];

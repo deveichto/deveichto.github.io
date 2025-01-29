@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { assets } from "../assets/assets"
-import { AboutMe, ToolsInAbout } from "../datas/data"
+import { AboutMeBox, Intro, ToolsInAbout } from "../datas/data"
 
 const AboutComp = ({isDarkMode}:{isDarkMode: boolean}) => {
     return (
@@ -14,12 +14,10 @@ const AboutComp = ({isDarkMode}:{isDarkMode: boolean}) => {
                 </div>
 
                 <div className="flex-1">
-                    <p className="mb-10 max-w-2xl font-Ovo">
-                        I am an experienced Backend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.
-                    </p>
+                    <p className="mb-10 max-w-2xl font-Ovo text-justify">{Intro.description}</p>
 
-                    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2l">
-                        {AboutMe.map(({icon, iconDark, title, description}, index) => (
+                    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                        {AboutMeBox.map(({icon, iconDark, title, description}, index) => (
                             <li key={index} className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:shadow-white dark:hover:bg-darkHover">
                                 <Image src={isDarkMode ? iconDark : icon} alt={title} className="w-7 mt-3" />
                                 <h3 className="my-4 font-semibold text-gray-700 dark:text-white">{title}</h3>

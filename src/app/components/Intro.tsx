@@ -8,6 +8,7 @@ const IntroComp = () => {
             <div className="w-full px-12 py-10 scroll-mt-20 flex flex-col-reverse md:flex-row gap-2">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
+                        <span className="font-thin text-lg">Hello, I&apos;m</span>
                         <h1 className="pb-14 text-5xl md:text-6xl lg:text-7xl font-thin tracking-tight lg:mt-12">
                             {Intro.name}
                         </h1>

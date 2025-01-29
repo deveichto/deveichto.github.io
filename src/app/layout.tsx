@@ -13,7 +13,7 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "Eichto. | Portfolio | Mark Jeff Abasula | Developer",
+  title: "Portfolio | Mark Jeff Abasula | Developer",
   description: "Software Engineer that based in The Philippines.",
 };
 
