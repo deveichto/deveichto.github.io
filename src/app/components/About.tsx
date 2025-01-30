@@ -4,8 +4,8 @@ import { AboutMeBox, Intro, ToolsInAbout } from "../datas/data"
 
 const AboutComp = ({isDarkMode}:{isDarkMode: boolean}) => {
     return (
-        <div id="about" className="w-full px-[10%] py-10 scroll-mt-20">
-            <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+        <div id="about" className="w-full px-[10%] py-1 md:py-10 scroll-mt-20">
+            <h4 className="text-center mb-2 text-lg font-Ovo hidden">Introduction</h4>
             <h2 className="text-center text-5xl font-Ovo">About Me</h2>
 
             <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">

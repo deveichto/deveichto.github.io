@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const ContactComp = () => {
     return (
-        <div id="contacts" className="w-full px-[12%] py-10 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none">
+        <div id="contacts" className="w-full px-[12%] py-1 md:py-10 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none">
             <div className="w-full text-center">
                 <h4 className="text-center mb-2 text-lg font-Ovo">Contact Me</h4>
                 <h2 className="text-center text-5xl font-Ovo">Get in touch</h2>
@@ -51,15 +51,17 @@ const ContactComp = () => {
 
                     <div className="flex flex-col gap-5 text-gray-500 dark:text-white">
                         <div className="flex flex-row items-start justify-start gap-2 text-sm">
-                            <span className="flex flex-row gap-1 font-semibold"><MdPhone /> Mobile #:</span> <span>(+63) 961 516 8268</span>
+                            <span className="flex flex-row gap-1 font-semibold"><MdPhone /> Mobile #:</span>
+                            <Link href="tel:+639615168268" className="hover:underline" target="_blank">(+63) 961 516 8268</Link>
                         </div>
                         <div className="flex flex-row items-start justify-start gap-2 text-sm">
-                            <span className="flex flex-row gap-1 font-semibold"><MdEmail /> Email:</span> <span>markjeff.abasula@outlook.com</span>
+                            <span className="flex flex-row gap-1 font-semibold"><MdEmail /> Email:</span> 
+                            <Link href="mailto:markjeff.abasula@outlook.com" className="hover:underline" target="_blank">markjeff.abasula@outlook.com</Link>
                         </div>
 
                         <h2 className="mt-10 lg:mt-5 font-semibold">Social Media:</h2>
-                        <Link href="https://www.linkedin.com/in/markjeffabasula/" target="_blank" className="flex flex-row items-start justify-start gap-2 text-sm"><FaLinkedin /> LinkedIn</Link> 
-                        <Link href="https://www.instagram.com/junichie_tv/" target="_blank" className="flex flex-row items-start justify-start gap-2 text-sm"><FaInstagram /> Instagram</Link> 
+                        <Link href="https://www.linkedin.com/in/markjeffabasula/" target="_blank" className="flex flex-row items-start justify-start gap-2 text-sm hover:underline"><FaLinkedin /> LinkedIn</Link> 
+                        <Link href="https://www.instagram.com/junichie_tv/" target="_blank" className="flex flex-row items-start justify-start gap-2 text-sm hover:underline"><FaInstagram /> Instagram</Link> 
                     </div>
                 </div>
             </div>

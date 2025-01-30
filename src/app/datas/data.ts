@@ -2,9 +2,9 @@ import { assets } from "../assets/assets";
 
 export const Intro = {
     name: "Mark Jeff Abasula",
-    title: "Software/Web Developer",
-    details: "Experienced, dynamic, and detail-oriented Software/Web Developer with a demonstrated history of working in web technology.",
-    description: "Experienced, dynamic, and detail-oriented Software/Web Developer with a demonstrated history of working in web technology. Highly skilled in development using tools like: PHP, Codeigniter, Laravel, Javascript, jQuery, NextJS, Typescript, MySQL and other web technologies. Collaborate with the teams to engineer user-centric and optimized solutions for driving client satisfaction. Strong information technology professional with a Bachelor's degree focused in Computer Science from STI College Fairview.",
+    title: "Solutions Developer",
+    details: "Experienced, dynamic, and detail-oriented Web Application Developer with a demonstrated history of working in web technology.",
+    description: "Experienced, dynamic, and detail-oriented Web Application Developer with a demonstrated history of working in web technology. Highly skilled in development using tools like: PHP, Codeigniter, Laravel, Javascript, jQuery, NextJS, Typescript, MySQL and other web technologies. Collaborate with the teams to engineer user-centric and optimized solutions for driving client satisfaction. Strong information technology professional with a Bachelor's degree focused in Computer Science from STI College Fairview.",
     profile: assets.profile_img
 }
 
@@ -12,7 +12,7 @@ export const Projects = [
     {
         id: 1,
         name: "My Portfolio",
-        position: "Full Stack",
+        position: "Frontend",
         skills: {
             language: "Next.JS|React",
             scripting: "Typescript|JSON",
@@ -29,7 +29,7 @@ export const Projects = [
     {
         id: 2,
         name: "Ztory Website",
-        position: "CMS/Backend Developer",
+        position: "Frontend, Backend & CMS Developer",
         skills: {
             language: "PHP|Codeigniter 4",
             scripting: "Javascript|AJAX|JSON|jQuery",
@@ -46,7 +46,7 @@ export const Projects = [
     {
         id: 3,
         name: "PMQ",
-        position: "CMS/Backend Developer",
+        position: "Frontend, Backend & CMS Developer",
         skills: {
             language: "PHP|Codeigniter 4",
             scripting: "Javascript|AJAX|JSON|jQuery",
@@ -63,7 +63,7 @@ export const Projects = [
     {
         id: 4,
         name: "Lucunda Website",
-        position: "CMS/Backend Developer",
+        position: "Frontend, Backend & CMS Developer",
         skills: {
             language: "PHP|Codeigniter 4",
             scripting: "Javascript|AJAX|JSON|jQuery",
@@ -80,7 +80,7 @@ export const Projects = [
     {
         id: 5,
         name: "Lenovo PCCW Solutions",
-        position: "Solutions Developer",
+        position: "Solutions Developer (Backend)",
         skills: {
             language: "PHP|Codeigniter 4",
             scripting: "Javascript|AJAX|JSON|jQuery",

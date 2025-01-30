@@ -41,9 +41,9 @@ const ProjectsComp = () => {
 
     return (
         <>
-            <div id="projects" className="w-full px-[6%] py-10 scroll-mt-20">
-                <h4 className="text-center mb-2 text-lg font-Ovo">Portfolio</h4>
-                <h2 className="text-center text-5xl font-Ovo">My Projects</h2>
+            <div id="projects" className="w-full px-[6%] py-10 scroll-mt-20 mt-20 md:mt-0">
+                <h4 className="text-center mb-2 text-lg font-Ovo hidden">Portfolio</h4>
+                <h2 className="text-center text-5xl font-Ovo">Projects</h2>
 
                 <p className="text-center mx-auto mt-5 mb-12 font-Ovo">Explore some of my work! Click on each project to dive into the full details and see what I’ve created.</p>
 
