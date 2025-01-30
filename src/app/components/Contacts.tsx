@@ -5,6 +5,8 @@ import { MdEmail, MdPhone } from "react-icons/md"
 import { FaInstagram, FaLinkedin } from "react-icons/fa"
 import Link from "next/link"
 import { BaseSyntheticEvent, FormEvent, useState } from "react";
+import { motion } from "motion/react";
+import SectionTitleComp from "./_partials/SectionTitleComp";
 
 const ContactComp = () => {
     const [result, setResult] = useState("");
@@ -33,24 +35,31 @@ const ContactComp = () => {
     };
 
     return (
-        <div id="contacts" className="w-full px-[12%] py-1 md:py-10 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none">
-            <div className="w-full text-center">
-                <h4 className="text-center mb-2 text-lg font-Ovo">Contact Me</h4>
-                <h2 className="text-center text-5xl font-Ovo">Get in touch</h2>
-                
-                <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-                    I&apos;d love to hear from you. You can send me an email by using the form or contact me through my contact informations below.
-                </p>
-            </div>
+        <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 1}}
+            id="contacts" 
+            className="w-full px-[12%] py-1 md:py-10 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none">
 
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-5">
-                <div className="w-full lg:w-1/2 text-center h-[500px]">
+            <SectionTitleComp title="Get in touch" subTitle="Contact Me" details="I'd love to hear from you. You can send me an email by using the form or contact me through my contact informations below." />
+
+            <motion.div
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{delay: 0.9, duration: 0.5}}
+                className="flex flex-col lg:flex-row items-center justify-center gap-5">
+                <motion.div
+                    initial={{x: -50, opacity: 0}}
+                    whileInView={{x: 0, opacity: 1}}
+                    transition={{delay: 1.1, duration: 0.6}}
+                    className="w-full lg:w-1/2 text-center h-[430px]">
                     <h1>Send Email</h1>
 
                     <p className="mt-4 text-sm text-start">{result}</p>
 
                     <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
-                        <div className="grid grid-cols-1 gap-6 mt-10 mb-8">
+                        <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
                             <input 
                                 type="text" 
                                 placeholder="Enter your full name" 
@@ -77,9 +86,15 @@ const ContactComp = () => {
                             type="submit" 
                             className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Submit <Image src={assets.right_arrow_white} alt="submit" className="w-4" /></button>
                     </form>
-                </div>
-                <div className="w-0 border-black dark:border-white border-r h-[450px] hidden lg:block"></div>
-                <div className="w-full mt-20 md:mt-0 lg:w-1/2 lg:px-10 h-[500px]">
+                </motion.div>
+
+                <div className="w-0 border-black dark:border-white border-r h-[400px] hidden lg:block"></div>
+
+                <motion.div
+                    initial={{x: 50, opacity: 0}}
+                    whileInView={{x: 0, opacity: 1}}
+                    transition={{delay: 1.2, duration: 0.6}}
+                    className="w-full mt-20 md:mt-0 lg:w-1/2 lg:px-10 h-[430px]">
                     <h1 className="text-center mb-10">Contact Me</h1>
 
                     <div className="flex flex-col gap-5 text-gray-500 dark:text-white">
@@ -96,9 +111,9 @@ const ContactComp = () => {
                         <Link href="https://www.linkedin.com/in/markjeffabasula/" target="_blank" className="flex flex-row items-start justify-start gap-2 text-sm hover:underline"><FaLinkedin /> LinkedIn</Link> 
                         <Link href="https://www.instagram.com/junichie_tv/" target="_blank" className="flex flex-row items-start justify-start gap-2 text-sm hover:underline"><FaInstagram /> Instagram</Link> 
                     </div>
-                </div>
-            </div>
-        </div>
+                </motion.div>
+            </motion.div>
+        </motion.div>
     )
 }
 

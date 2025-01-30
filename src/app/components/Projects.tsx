@@ -7,6 +7,8 @@ import { MdClose } from "react-icons/md";
 import Link from "next/link";
 import { FaGlobe } from "react-icons/fa";
 import ImageComp from "./_partials/ImageComp";
+import { motion } from "motion/react";
+import SectionTitleComp from "./_partials/SectionTitleComp";
 
 export interface Projects {
     id: number,
@@ -41,15 +43,29 @@ const ProjectsComp = () => {
 
     return (
         <>
-            <div id="projects" className="w-full px-[6%] py-10 scroll-mt-20 mt-20 md:mt-0">
-                <h4 className="text-center mb-2 text-lg font-Ovo hidden">Portfolio</h4>
-                <h2 className="text-center text-5xl font-Ovo">Projects</h2>
+            <motion.div 
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration: 1}}
+                id="projects" 
+                className="w-full px-[6%] py-10 scroll-mt-20 mt-20 md:mt-0">
+                
+                <SectionTitleComp title="Projects" details="Explore some of my work! Click on each project to dive into the full details and see what I've created." />
 
-                <p className="text-center mx-auto mt-5 mb-12 font-Ovo">Explore some of my work! Click on each project to dive into the full details and see what I’ve created.</p>
-
-                <div className="grid grid-cols-auto md:grid-cols-3 lg:grid-cols-4 my-10 gap-5 dark:text-black">
+                <motion.div
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{delay: 0.9, duration: 0.6}}
+                    className="grid grid-cols-auto md:grid-cols-3 lg:grid-cols-4 my-10 gap-5 dark:text-black">
                     {Projects.map( (p) => (
-                        <div key={p.id} className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style={{backgroundImage: `url(${p.banner})`}} onClick={() => GetProjectDetails(p.id)}>
+                        <motion.div
+                            whileHover={{scale: 1.05}} 
+                            transition={{duration: 0.3}}
+                            key={p.id} 
+                            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" 
+                            style={{backgroundImage: `url(${p.banner})`}} 
+                            onClick={() => GetProjectDetails(p.id)}>
+
                             <div className="bg-white w-11/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                                 <div>
                                     <h2 className="font-semibold">{p.name}</h2>
@@ -59,10 +75,11 @@ const ProjectsComp = () => {
                                     <Image src={assets.send_icon} alt="View Project Details" className="w-5" />
                                 </div>
                             </div>
-                        </div>
+
+                        </motion.div>
                     ))}
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
             {openProject && (
                 <div className="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-70 z-50 flex items-center justify-center">
